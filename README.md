@@ -77,3 +77,9 @@ You will be prompted to choose between logging in or starting without login, and
 - Ensure that the path to your WebDriver executable is correctly set.
 - Make sure the WebDriver version matches your browser version.
 - If encountering issues with the script, check the console output for error messages.
+
+## Disclaimer
+
+- **Use at Your Own Risk**: This script is provided for educational purposes only. Using automation on typing test websites may violate their terms of service.
+- **Potential for Banning**: Automating typing tests could result in your account being banned or other penalties. Use this tool responsibly and understand the risks involved.
+- **Not Liable for Consequences**: The author of this script is not responsible for any consequences resulting from its use, including but not limited to account bans or other penalties.
