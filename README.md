@@ -1,4 +1,4 @@
-# Typing Bot Automation
+# MonkeyTypeBot
 
 This script automates typing tests on Monkeytype.com using Selenium WebDriver. You can log in with your email and password or start typing without logging in. The script allows you to control typing speed and page mode.
 
