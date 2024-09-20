@@ -72,6 +72,9 @@ You will be prompted to choose between logging in or starting without login, and
 1. **Enter Typing Speed**: Time between typing each character (e.g., 0.1 for ~100 WPM).
 2. **Enter Mode Switching Time**: Seconds to wait before switching mode (0 for no switch).
 
+## Screenshot
+
+
 ## Troubleshooting
 
 - Ensure that the path to your WebDriver executable is correctly set.
