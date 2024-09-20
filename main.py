@@ -32,7 +32,7 @@ def initialize_driver():
 def login():
     clear_screen()
     print("------------Note----------------")
-    print("1. Once on the practice page, switch to 'Text Mode' for better accuracy (In 10 Seconds). 'Time Mode' has unlimited words, so it might stop after typing a certain number.")
+    print("1. Once on the practice page, switch to 'Text Mode' for better accuracy. 'Time Mode' has unlimited words, so it might stop after typing a certain number.")
     print("2. Please note that the bot gets detected around 200 WPM, so it's recommended to keep the speed lower than that.\n")
     print("Please enter your email and password to log in.")
 
@@ -109,7 +109,7 @@ def login():
 def without_login():
     clear_screen()
     print("------------Note----------------")
-    print("1. Once on the practice page, switch to 'Text Mode' for better accuracy (In 10 Seconds). 'Time Mode' has unlimited words, so it might stop after typing a certain number.")
+    print("1. Once on the practice page, switch to 'Text Mode' for better accuracy. 'Time Mode' has unlimited words, so it might stop after typing a certain number.")
     print("2. Please note that the bot gets detected around 200 WPM, so it's recommended to keep the speed lower than that.\n")
     
     while True:
