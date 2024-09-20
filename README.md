@@ -74,7 +74,7 @@ You will be prompted to choose between logging in or starting without login, and
 
 ## Screenshots
 
-<img align="center" src="https://raw.githubusercontent.com/OTAKUWeBer/MonekeyTypeBot/main/assets/ss1.jpg" alt="screenshot-1">
+<img align="center" src="https://raw.githubusercontent.com/OTAKUWeBer/MonkeyTypeBot/refs/heads/master/assets/ss1.jpg" alt="screenshot-1">
 
 
 ## Troubleshooting
