@@ -25,13 +25,13 @@ clear_screen()
 
 def initialize_driver():
     if browser == "Firefox":
-        return webdriver.Firefox(executable_path=path) # You have to "executable_path=path" line if you use linux 
+        return webdriver.Firefox(executable_path=path) # You have to remove "executable_path=path" line if you use linux 
     elif browser == "Chrome":
         chrome_options = Options()
         chrome_options.add_experimental_option("detach", True)  # Prevent Chrome from closing
         return webdriver.Chrome(executable_path=path, options=chrome_options)
     else:
-        raise ValueError("Unsupported browser specified. Use 'Firefox' or 'Chrome'.") # You have to "executable_path=path" line if you use linux
+        raise ValueError("Unsupported browser specified. Use 'Firefox' or 'Chrome'.") # You have to remove "executable_path=path" line if you use linux
 
 def login():
     clear_screen()
