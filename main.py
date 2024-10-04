@@ -2,7 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 import subprocess
+from getpass import getpass
 import time
 import os
 
@@ -25,7 +27,9 @@ def initialize_driver():
     if browser == "Firefox":
         return webdriver.Firefox(executable_path=path)
     elif browser == "Chrome":
-        return webdriver.Chrome(executable_path=path)
+        chrome_options = Options()
+        chrome_options.add_experimental_option("detach", True)  # Prevent Chrome from closing
+        return webdriver.Chrome(executable_path=path, options=chrome_options)
     else:
         raise ValueError("Unsupported browser specified. Use 'Firefox' or 'Chrome'.")
 
@@ -37,7 +41,7 @@ def login():
     print("Please enter your email and password to log in.")
 
     email = input("Enter Email: ")
-    password = input("Enter Password: ")
+    password = getpass("Enter Password: ")
     
     while True:
         try:
@@ -154,6 +158,7 @@ def without_login():
     for alphabet in texts:
         input_field.send_keys(alphabet)
         time.sleep(speed)
+        
 
 def choose():
     print("Choose your login method:")
