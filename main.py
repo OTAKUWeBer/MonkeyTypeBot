@@ -11,6 +11,14 @@ import os
 # Specify the browser to use: "Firefox" or "Chrome"
 browser = "Firefox"
 
+<<<<<<< HEAD
+=======
+# Path to the WebDriver executable
+# For Firefox, this should be the path to geckodriver
+# For Chrome, this should be the path to chromedriver
+path = "/path/to/your/webdriver"  # Update this with the actual path to geckodriver or chromedriver
+
+>>>>>>> origin/master
 def clear_screen():
     if os.name == 'nt':  # For Windows
         subprocess.run(['cls'], shell=True)
@@ -20,11 +28,19 @@ clear_screen()
 
 def initialize_driver():
     if browser == "Firefox":
+<<<<<<< HEAD
         return webdriver.Firefox()
     elif browser == "Chrome":
         chrome_options = Options()
         chrome_options.add_experimental_option("detach", True)  # Prevent Chrome from closing
         return webdriver.Chrome(options=chrome_options)
+=======
+        return webdriver.Firefox(executable_path=path) # You have to remove "executable_path=path" line if you use linux 
+    elif browser == "Chrome":
+        chrome_options = Options()
+        chrome_options.add_experimental_option("detach", True)  # Prevent Chrome from closing
+        return webdriver.Chrome(executable_path=path, options=chrome_options)
+>>>>>>> origin/master
     else:
         raise ValueError("Unsupported browser specified. Use 'Firefox' or 'Chrome'.") # You have to remove "executable_path=path" line if you use linux
 
