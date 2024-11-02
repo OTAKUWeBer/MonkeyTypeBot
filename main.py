@@ -11,6 +11,8 @@ import os
 # Specify the browser to use: "Firefox" or "Chrome"
 browser = "Firefox"
 
+
+# Clears the screen before start up
 def clear_screen():
     if os.name == 'nt':  # For Windows
         subprocess.run(['cls'], shell=True)
