@@ -13,11 +13,7 @@ This script automates typing tests on Monkeytype.com using Selenium WebDriver. Y
 
 - Python 3.x
 - Selenium WebDriver
-<<<<<<< HEAD
 - Chrome or Firefox
-=======
-- [Geckodriver](https://github.com/mozilla/geckodriver/releases) (for Firefox) or [Chromedriver](https://googlechromelabs.github.io/chrome-for-testing/) (for Chrome)
->>>>>>> origin/master
 
 ## Installation
 
@@ -33,11 +29,7 @@ This script automates typing tests on Monkeytype.com using Selenium WebDriver. Y
    Install the necessary Python package:
 
    ```bash
-<<<<<<< HEAD
    pip install -r requirements.txt
-=======
-   pip install selenium
->>>>>>> origin/master
    ```
 
 3. **Download WebDriver**:
@@ -52,14 +44,6 @@ This script automates typing tests on Monkeytype.com using Selenium WebDriver. Y
    ```python
    # Specify the browser to use: "Firefox" or "Chrome"
    browser = "Firefox"
-<<<<<<< HEAD
-=======
-
-   # Path to the WebDriver executable
-   # For Firefox, this should be the path to geckodriver
-   # For Chrome, this should be the path to chromedriver
-   path = "/path/to/your/webdriver"  # Update this with the actual path
->>>>>>> origin/master
    ```
 
 ## Usage
